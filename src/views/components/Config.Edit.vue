@@ -3,7 +3,7 @@
     <div class="name">Config.Edit</div>
     <template v-for="(config, index) in Object.keys(configs)">
         <el-form-item :key="index" :label="config">
-          <el-input v-model="configs[config]" @change="onchange"></el-input>
+          <el-input v-model="configs[config]"></el-input>
         </el-form-item>
     </template>
     <el-button @click="onchange" v-if="fileName">保存修改</el-button>
