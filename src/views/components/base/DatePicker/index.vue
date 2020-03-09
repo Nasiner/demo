@@ -16,7 +16,7 @@ export default {
   },
   props: {
     config: {
-      default: () => ({...config}),
+      default: () => (config),
       type: Object
     }
   }
